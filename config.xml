@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>dietconfiguration</name>
+	<displayName><![CDATA[Diet configuration]]></displayName>
+	<version><![CDATA[1]]></version>
+	<description><![CDATA[Module de configuration du calcul d&#039;IMC. Powered by CKA]]></description>
+	<author><![CDATA[KANZAFOX 5.0]]></author>
+	<tab><![CDATA[dietconfiguration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
