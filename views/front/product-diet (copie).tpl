@@ -10,6 +10,15 @@
 	<div class="modal-dialog">
     	<!-- Modal content-->
     	<div class="modal-content">
+
+    		<ul class="nav nav-tabs">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="#">Menu 1</a></li>
+			  <li><a href="#">Menu 2</a></li>
+			  <li><a href="#">Menu 3</a></li>
+			</ul>
+
+    		
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
 				<h4 class="modal-title">{l s='IMC calculator'}</h4>

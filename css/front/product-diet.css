@@ -1,6 +1,16 @@
+/*** Message d'erreur en entete ****/
+.error {
+	color:red;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
 .modal-body {
     max-height: inherit;
 }
+
+/***** bouton radio homme/femme *****/
 
 .btn-primary,
 .btn-primary:hover, 

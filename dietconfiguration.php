@@ -14,6 +14,7 @@ class Dietconfiguration extends Common {
 	 * 
 	 */
 	public function __construct(){
+		
 				
 		$this->name 		 = 'dietconfiguration';
 		$this->tab     		 = 'dietconfiguration';
@@ -29,14 +30,19 @@ class Dietconfiguration extends Common {
 		$this->description 	= $this->l("Module de configuration du calcul d'IMC. Powered by CKA");		
 		$this->context 		= Context::getContext();
 		$this->id_lang 		= $this->context->cookie->id_lang;
+
+
+
 	}
 
 	function hookDisplayProductButtons($params) {
 
 		$this->context->controller->addJS($this->_path  . 'js/front/product-diet.js');
 		$this->context->controller->addCSS($this->_path . 'css/front/product-diet.css');
-		$this->context->controller->addJS($this->_path  . 'libs/bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js');
-		$this->context->controller->addJS($this->_path  . 'js/front/highcharts/highcharts.js');
+		$this->context->controller->addJS($this->_path  . 'libs/thickbox/thickbox-compressed.js');
+		$this->context->controller->addCSS($this->_path . 'libs/thickbox/thickbox.css');
+
+		//$this->context->controller->addJS($this->_path  . 'js/front/highcharts/highcharts.js');
 
 		$this->context->smarty->assign(
 			array(
@@ -92,6 +98,10 @@ class Dietconfiguration extends Common {
 	 */
 	public function getContent()
 	{
+
+
+
+
 		// we add headers
 		$this->_html = '';
 		$this->_initHeaderHTML();

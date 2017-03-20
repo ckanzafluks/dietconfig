@@ -92,11 +92,11 @@ function checkAllFields() {
 }
 
 function openFancyBox() {
-	if (!!$.prototype.fancybox)
+	//if (!!$.prototype.fancybox)
 	    $.fancybox.open([
 	    {
 	        type: 'inline',
-	        title: DATABOX_TITLE,
+	        title: "test",
 	        autoScale: true,
 	        titleShow : true,
 	        /*minHeight: 30,*/
@@ -104,7 +104,7 @@ function openFancyBox() {
 	        height: 800,
 	        /*overlayColor: ""*/
 	        modal: false,
-	        content: getContentBoxy()
+	        content: $("#hiddenModalContent").html()
 	    }],
 		{
 	        padding: 10
