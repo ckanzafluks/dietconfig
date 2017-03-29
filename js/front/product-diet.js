@@ -56,10 +56,10 @@ function makeChart(imc) {
 			        plotBackgroundImage: null,
 			        plotBorderWidth: 0,
 			        plotShadow: true,
-			        //width: 280,
-		            //height: 280,
+			        width: 180,
+		            height: 180,
 		            spacingTop: 0,
-		            spacingLeft: 0,
+		            spacingLeft: 35,
 		            spacingRight: 0,
 		            spacingBottom: 0
 			    },
