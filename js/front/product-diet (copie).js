@@ -278,14 +278,12 @@ function makeChart(imc) {
 			    // the value axis
 			    yAxis: {
 			        min: 0,
-			        max: 55,
-			        
+			        max: 100,
 			        minorTickInterval: 'auto',
 			        minorTickWidth: 1,
 			        minorTickLength: 10,
 			        minorTickPosition: 'inside',
 			        minorTickColor: '#666',
-			
 			        tickPixelInterval: 30,
 			        tickWidth: 2,
 			        tickPosition: 'inside',
@@ -296,10 +294,21 @@ function makeChart(imc) {
 			            rotation: 'auto'
 			        },
 			        title: {
-			            text: ''
+			            text: ' '
 			        },
-			        plotBands: eval(DATABOX_IMC_INT) 
-			        
+			        plotBands: [{
+			            from: 0,
+			            to: 120,
+			            color: '#55BF3B' // green
+			        }, {
+			            from: 120,
+			            to: 160,
+			            color: '#DDDF0D' // yellow
+			        }, {
+			            from: 160,
+			            to: 200,
+			            color: '#DF5353' // red
+			        }]
 			    },
 			
 			    series: [{

@@ -1,7 +1,7 @@
 
 
 <p class="buttons_bottom_block">
-	<a href="#TB_inline?height=200&width=400&inlineId=hiddenModalContent&modal=true" class="thickbox exclusive button btn_add_cart"> 
+	<a href="#TB_inline?height=30%&width=70%&inlineId=hiddenModalContent&modal=true" class="thickbox exclusive button btn_add_cart"> 
 		<span>{l s='Calculer mon IMC'}</span>
 	</a>
 </p>
@@ -22,7 +22,7 @@
 			<a id="tab-step2" class="nav-link" data-toggle="tab" href="#step2" role="tab">Step 2</a>
 		</li>
 		<li class="nav-item">
-			<a id="tab-step2" class="nav-link" data-toggle="tab" href="#step3" role="tab">Step 3</a>
+			<a id="tab-step3" class="nav-link" data-toggle="tab" href="#step3" role="tab">Step 3</a>
 		</li>
 	</ul>
 	
@@ -68,11 +68,19 @@
 				     	</a>
 				    </p>
 				</div>
+				<input type="hidden" name="id_category" id="id_category" value="{$id_category}">
 			</form>
 	  	</div>
 	  
 
-		<div class="tab-pane" id="step2" role="tabpanel">.dsdsdsdstep2</div>
+		<div class="tab-pane" id="step2" role="tabpanel">
+			<div class="row">	
+				<div class="col-md-2" style="">
+					<div id="chart" style="width:40%;float:left; background-color:red;/*margin:0 auto; */width:280px; height:280px;"></div>
+				</div>
+				<div class="col-md-6" style="width:60%;background-color:yellow;">XXXXX</div>
+			</div>
+		</div>
 		<div class="tab-pane" id="step3" role="tabpanel">step3</div>
 	</div>
 

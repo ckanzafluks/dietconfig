@@ -15,23 +15,20 @@ class Dietconfiguration extends Common {
 	 */
 	public function __construct(){
 		
-				
-		$this->name 		 = 'dietconfiguration';
-		$this->tab     		 = 'dietconfiguration';
-		$this->version 		 = 2.0;
-		$this->author 		 = 'KANZAFOX 5.0';
-		$this->need_instance = 0;
-		$this->url 			 = $_SERVER["REQUEST_URI"];
+
+		$this->name 		 		  = 'dietconfiguration';
+		$this->tab     		 		  = 'dietconfiguration';
+		$this->version 		 		  = 2.0;
+		$this->author 		 		  = 'KANZAFOX 5.0';
+		$this->need_instance 		  = 0;
+		$this->url 			 		  = $_SERVER["REQUEST_URI"];
 		$this->ps_versions_compliancy = array('min' => '1.5', 'max' => '1.6');
 	 
 		parent::__construct();
-	 
-		$this->displayName 	= $this->l("Diet configuration");
+	 	$this->displayName 	= $this->l("Diet configuration");
 		$this->description 	= $this->l("Module de configuration du calcul d'IMC. Powered by CKA");		
 		$this->context 		= Context::getContext();
 		$this->id_lang 		= $this->context->cookie->id_lang;
-
-
 
 	}
 
@@ -41,14 +38,18 @@ class Dietconfiguration extends Common {
 		$this->context->controller->addCSS($this->_path . 'css/front/product-diet.css');
 		$this->context->controller->addJS($this->_path  . 'libs/thickbox/thickbox-compressed.js');
 		$this->context->controller->addCSS($this->_path . 'libs/thickbox/thickbox.css');
+		$this->context->controller->addJS($this->_path  . 'js/front/highcharts/highcharts.js');
+		$this->context->controller->addJS($this->_path  . 'js/front/highcharts/highcharts-more.js');
 
-		//$this->context->controller->addJS($this->_path  . 'js/front/highcharts/highcharts.js');
+		
+
+		$product = $params['product'];
 
 		$this->context->smarty->assign(
 			array(
 				// 'gapi_mode' => $gapi_mode,
 				// 'dashactivity_config_form' => $this->renderConfigForm(),
-				// 'date_subtitle' => $this->l('(from %s to %s)'),
+				'id_category' => $product->getDefaultCategory(),
 				'date_format' => $this->context->language->date_format_lite,
 				'path'		  => $this->_path,
 				'link'        => $this->context->link
@@ -314,24 +315,6 @@ class Dietconfiguration extends Common {
 	
 	
  
-	
-	
-/**
- * 
-	private function _displayFormAddCategory() {
-		$this->context->smarty->assign('idCategory',Tools::getValue('id_category'));
-		return $this->display(__FILE__, 'formaddcategory.tpl');
-	}
-	
-	private function _displayHomePageCategories() {
-		return $this->display(__FILE__, 'listcategories.tpl');
-	}
-	
-	 
-	 
-	 
-	 
- */	
 	
   
   
