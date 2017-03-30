@@ -34,6 +34,7 @@ $(document).ready(function(){
 				console.log(htmlData);
 				if ( htmlData.success == "1" ) {
 					makeChart(htmlData.imc);
+					$("#legend-chart").hide();
 					$("#tab-step2").click();
 				}
 			}
@@ -57,17 +58,18 @@ function makeChart(imc) {
 			        plotBorderWidth: 0,
 			        plotShadow: true,
 			        width: 180,
-		            height: 180,
+			        height: 180,
 		            spacingTop: 0,
 		            spacingLeft: 35,
 		            spacingRight: 0,
 		            spacingBottom: 0
 			    },
-
+			    credits: {
+			        enabled: false
+			    },
 			    title: {
 			        text: ' '
 			    },
-
 			    pane: {
 			        startAngle: -150,
 			        endAngle: 150,
@@ -90,7 +92,7 @@ function makeChart(imc) {
 			                    [1, '#FFF']
 			                ]
 			            },
-			            borderWidth: 1,
+			            borderWidth: 0,
 			            outerRadius: '107%'
 			        },		         
 			        {

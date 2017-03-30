@@ -72,11 +72,13 @@
 			  
 
 				<div class="tab-pane" id="step2" role="tabpanel">
-					<div class="row">
-						<div class="col-md-2" style="">
-							<div id="chart"></div>
+					<div class="col-xs-4">
+						<div class="row">
+							<div class="col-xs-2">
+								<div id="chart"></div>
+							</div>
+							<div class="col-xs-2">xxxxhdjsdssjdsjkdjksd</div>
 						</div>
-						<div class="col-md-6" style="width:60%;background-color:yellow;">XXXXX</div>
 					</div>
 				</div>
 				<div class="tab-pane" id="step3" role="tabpanel">step3</div>
