@@ -34,28 +34,9 @@ button.btnIMC {
 
 
 .bloc-left {	
-	width: 214px;
-	height: 378px;
+	width: 40%;
 	float: left;
-	overflow:hidden;
-	position:relative;
-	
-	/*border-radius*/
-	-moz-border-radius-topleft: 1px;
-	-webkit-border-top-left-radius: 1px;
-	border-top-left-radius: 1px;
-	-moz-border-radius-topright: 20px;
-	-webkit-border-top-right-radius: 20px;
-	border-top-right-radius: 20px;
-	-moz-border-radius-bottomleft: 20px;
-	-webkit-border-bottom-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	
-	border: 1px dotted black;	
-	background-color: white;	
-	margin: 10px;
-	padding: 10px;
-	
+	overflow:hidden;	
 }
 .bloc-left .overlay{
 	 position: absolute;
@@ -66,8 +47,7 @@ button.btnIMC {
 	 z-index: 10;
 	 background-color: rgba(228, 226, 226, 0.95);
 	opacity: 93.4;
-	filter: alpha(opacity=40); /* For IE8 and earlier */
-  
+	filter: alpha(opacity=40); /* For IE8 and earlier */  
 }
 
 .bloc-left #error-box {

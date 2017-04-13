@@ -72,14 +72,46 @@
 			  
 
 				<div class="tab-pane" id="step2" role="tabpanel">
-					<div class="col-xs-4">
-						<div class="row">
-							<div class="col-xs-2">
-								<div id="chart"></div>
-							</div>
-							<div class="col-xs-2">xxxxhdjsdssjdsjkdjksd</div>
-						</div>
+					<div class="col-xs-6 col-md-4">
+						<div id="chart" style="background-color:red;float:left;"></div>
 					</div>
+  					<div class="col-xs-6 col-md-4">
+  						<div class="bloc-left">
+							<span class="title">{l s='Traitement'}</span>			
+							<div class="linex">
+								<div class="image-doctor">
+									<img src="{$path}/img/front/happy-doctor4.jpg?v=1" alt="{l s='Image repas'}" class="icon" />
+								</div>
+							</div>	
+							<div class="line">
+								<div class="text-podologie">
+									{l s='1 capsule de garcinia cambogia avant chaque repas pendant 3 mois.'}
+								</div>
+							</div>
+										
+							<div class="linex" >
+								<div class="image-food" id="image-ajax">
+									<img src="{$path}/img/front/plat.jpg" alt="{l s='Image repas'}" class="icon" />
+								</div>
+								<div class="plus">+</div>
+								<div class="image-food">
+									<img src="{$path}/img/front/pills.jpg" alt="{l s='Image gellule'}" class="icon" />
+								</div>
+							</div>
+							
+							<div class="line">
+								<div class="text-podologie" style="color:red;">
+									{l s='Perte de poids estimée :'}
+									<div id="estimation">
+										<div class='content'></div>
+									</div>
+								</div>
+							</div>
+						</div>  						
+
+  					</div>
+
+					
 				</div>
 				<div class="tab-pane" id="step3" role="tabpanel">step3</div>
 			</div>        

@@ -60,7 +60,7 @@ function makeChart(imc) {
 			        width: 180,
 			        height: 180,
 		            spacingTop: 0,
-		            spacingLeft: 35,
+		            spacingLeft: 0,
 		            spacingRight: 0,
 		            spacingBottom: 0
 			    },
